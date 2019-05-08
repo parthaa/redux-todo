@@ -2,17 +2,21 @@
   "name": "react",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://parthaa.github.io/redux-todo",
   "dependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "redux": "*",
-    "react-redux": "*"
+    "react-redux": "*",
+    "gh-pages": "*"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "react-scripts": "latest"

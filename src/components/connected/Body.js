@@ -12,7 +12,7 @@ function mapStateToProps(state) {
 // Map Redux actions to component props
 function mapDispatchToProps(dispatch) {
   return {
-    remove: function(index) {
+    onClick: function(index) {
       return dispatch(removeAction(index));
     }
   };

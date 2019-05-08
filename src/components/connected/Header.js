@@ -11,7 +11,7 @@ function mapStateToProps(state) {
 // Map Redux actions to component props
 function mapDispatchToProps(dispatch) {
   return {
-    add: function(value) {
+    onSubmit: function(value) {
       return dispatch(addAction(value));
     }
   };

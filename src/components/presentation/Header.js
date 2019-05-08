@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Header extends Component {
   setNewValue = (e) => { 
       e.preventDefault();
-      this.props.add(this._input.value);
+      this.props.onSubmit(this._input.value);
       this._input.value = "";
   }
   

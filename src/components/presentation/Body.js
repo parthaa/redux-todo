@@ -1,9 +1,9 @@
 import React from 'react';
 
 const body = (props) => {
-  const list = props.list.map((item, index) => {
+  const list = props.values.map((item, index) => {
     return (
-      <li key={index} onClick={() => props.onClick(index)}>
+      <li key={index} onClick={() => props.remove(index)}>
         {item}
       </li>
     );
